@@ -1,5 +1,6 @@
 import Index from './pages/Index/Index.vue'
 import AboutUs from './pages/AboutUs/About.vue'
+import UserOpinion from './pages/UserOpinion/Opinions.vue'
 
 export const Routes = [
     {
@@ -9,5 +10,9 @@ export const Routes = [
     {
         path: '/AboutUs',
         component: AboutUs
+    },
+    {
+        path: '/UserOpinion',
+        component: UserOpinion
     }
 ];
