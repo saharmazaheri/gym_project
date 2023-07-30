@@ -43,8 +43,8 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link active">خانه</a>
-                        <a href="about.html" class="nav-item nav-link">درباره‌ی ما</a>
+                        <router-link to="/">خانه</router-link>
+                        <router-link to="/AboutUs">درباره‌ی ما</router-link>
                         <a href="comments.html" class="nav-item nav-link">دیدگاه‌ها</a>
                         <a href="service.html" class="nav-item nav-link">کافی شاپ</a>
                         <a href="class.html" class="nav-item nav-link">دوره‌ها</a>
@@ -64,32 +64,5 @@
         </div>
         <!-- Nav Bar End -->
 
-
-        <!-- Hero Start -->
-        <div class="hero">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-text">
-                            <h1>Lorem ipsum dolor sit amet</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasell nec pretum mi. Curabi ornare velit non. Aliqua
-                                metus tortor auctor quis sem.
-                            </p>
-                            <div class="hero-btn">
-                                <a class="btn" href="login.html">ورود</a>
-                                <a class="btn" href="signup.html">ثبت نام</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <img src="img/hero.png" alt="Hero Image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Hero End -->
     </header>
 </template>
