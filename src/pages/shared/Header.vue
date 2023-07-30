@@ -44,8 +44,8 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <router-link to="/" active-class="active" exact class="nav-item nav-link">خانه</router-link>
-                        <router-link to="/AboutUs" active-class="active" class="nav-item nav-link">درباره‌ی ما</router-link>
-                        <a href="comments.html" class="nav-item nav-link">دیدگاه‌ها</a>
+                        <router-link to="/AboutUs" active-class="active" class="nav-item nav-link">درباره‌ما</router-link>
+                        <router-link to="/UserOpinion" active-class="active" class="nav-item nav-link">دیدگاه‌ها</router-link>
                         <a href="service.html" class="nav-item nav-link">کافی شاپ</a>
                         <a href="class.html" class="nav-item nav-link">دوره‌ها</a>
                         <a href="trainer.html" class="nav-item nav-link">مربی‌ها</a>
