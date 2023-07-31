@@ -253,3 +253,9 @@
     <!-- Class End -->
     </viv>
 </template>
+
+<script>
+export default {
+    
+}
+</script>
