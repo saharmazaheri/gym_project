@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 
 import { Routes } from './Routes'
-import { Store } from './store/Store.js';
+import { store } from './store/Store.js';
 
 Vue.use(VueRouter);
 
@@ -21,6 +21,6 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   router,
-  Store,
+  store,
   render: h => h(App)
 })
