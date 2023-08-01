@@ -5,7 +5,7 @@ const state = {
             type:"عمومی",
             numberOfSessions:"هشت جلسه در یک ماه",
             price:"250.000 تومان",
-            filter:"filter-1"
+            fillter:"filter-1"
 
         },
         {
