@@ -47,8 +47,8 @@
                         <router-link to="/AboutUs" active-class="active" class="nav-item nav-link">درباره‌ما</router-link>
                         <router-link to="/UserOpinion" active-class="active" class="nav-item nav-link">دیدگاه‌ها</router-link>
                         <router-link to="/Courses" active-class="active" class="nav-item nav-link">دوره‌ها</router-link>
+                        <router-link to="/Trainers" active-class="active" class="nav-item nav-link">مربی‌ها</router-link>
                         <a href="service.html" class="nav-item nav-link">کافی شاپ</a>
-                        <a href="trainer.html" class="nav-item nav-link">مربی‌ها</a>
                         <a href="" class="nav-item nav-link">Pose</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
