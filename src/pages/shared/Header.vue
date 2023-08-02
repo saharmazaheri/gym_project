@@ -44,10 +44,10 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <router-link to="/" active-class="active" exact class="nav-item nav-link">خانه</router-link>
-                        <router-link to="/AboutUs" active-class="active" class="nav-item nav-link">درباره‌ما</router-link>
-                        <router-link to="/UserOpinion" active-class="active" class="nav-item nav-link">دیدگاه‌ها</router-link>
-                        <router-link to="/Courses" active-class="active" class="nav-item nav-link">دوره‌ها</router-link>
-                        <router-link to="/Trainers" active-class="active" class="nav-item nav-link">مربی‌ها</router-link>
+                        <router-link to="/about-us" active-class="active" class="nav-item nav-link">درباره‌ما</router-link>
+                        <router-link to="/user-opinion" active-class="active" class="nav-item nav-link">دیدگاه‌ها</router-link>
+                        <router-link to="/courses" active-class="active" class="nav-item nav-link">دوره‌ها</router-link>
+                        <router-link to="/trainers" active-class="active" class="nav-item nav-link">مربی‌ها</router-link>
                         <a href="service.html" class="nav-item nav-link">کافی شاپ</a>
                         <a href="" class="nav-item nav-link">Pose</a>
                         <div class="nav-item dropdown">

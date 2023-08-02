@@ -10,19 +10,19 @@ export const Routes = [
         component: Index
     },
     {
-        path: '/AboutUs',
+        path: '/about-us',
         component: AboutUs
     },
     {
-        path: '/UserOpinion',
+        path: '/user-opinion',
         component: UserOpinion
     },
     {
-        path: '/Courses',
+        path: '/courses',
         component: Courses
     },
     {
-        path: '/Trainers',
+        path: '/trainers',
         component: Trainers
     }
 ];
