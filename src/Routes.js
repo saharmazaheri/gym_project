@@ -1,7 +1,8 @@
-import Index from './pages/Index/Index.vue'
-import AboutUs from './pages/AboutUs/About.vue'
-import UserOpinion from './pages/UserOpinion/Opinions.vue'
-import Courses from './pages/Courses/Courses.vue'
+import Index from './pages/Index.vue'
+import AboutUs from './pages/About.vue'
+import UserOpinion from './pages/Opinions.vue'
+import Courses from './pages/Courses.vue'
+import Trainers from './pages/Trainers.vue'
 
 export const Routes = [
     {
@@ -19,5 +20,9 @@ export const Routes = [
     {
         path: '/Courses',
         component: Courses
+    },
+    {
+        path: '/Trainers',
+        component: Trainers
     }
 ];
