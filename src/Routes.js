@@ -1,4 +1,6 @@
 import Index from './pages/Index.vue'
+import Login from './pages/Account/Login.vue'
+import Register from './pages/Account/Register.vue'
 import AboutUs from './pages/About.vue'
 import UserOpinion from './pages/Opinions.vue'
 import Courses from './pages/Courses.vue'
@@ -10,6 +12,14 @@ export const Routes = [
     {
         path: '/',
         component: Index
+    },
+    {
+        path: '/login',
+        component: Login
+    },
+    {
+        path: '/register',
+        component: Register
     },
     {
         path: '/about-us',
@@ -34,6 +44,6 @@ export const Routes = [
     {
         path: '/trainers/trainer-page/:id',
         component: TrainerPage,
-        name:'trainerpage'
+        name: 'trainerpage'
     }
 ];
