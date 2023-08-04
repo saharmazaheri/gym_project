@@ -28,15 +28,18 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp box" data-wow-delay="0.0s" v-for="item in trainers">
                         <div class="team-item">
                             <div class="team-img">
-                    
-                                <img :src="item.imge" alt="Image">
 
-                                <div class="team-social">
+                                <router-link :to="{name:'trainerpage',params:{id:item.id}}">
+                                    <img :src="item.imge" alt="Image">
+                                    <div class="team-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
                                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                                     <a href=""><i class="fab fa-instagram"></i></a>
                                 </div>
+                                </router-link>
+
+                                
                             </div>
                             <div class="team-text">
                                 <h2>{{ item.NameFamily }}</h2>
