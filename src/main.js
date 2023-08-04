@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Vuelidate from 'vuelidate'
 import App from './App.vue'
 
 import { Routes } from './Routes'
 import { store } from './store/Store.js';
 
 Vue.use(VueRouter);
+Vue.use(Vuelidate);
 
 const router = new VueRouter({
   routes: Routes,
