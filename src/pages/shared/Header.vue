@@ -36,7 +36,8 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">H<span>ero</span> fit</a>
+                <router-link to="/login" active-class="active" class="nav-item nav-link">ورود <i class="fa fa-lock"></i></router-link>
+                <router-link to="/register" active-class="active" class="nav-item nav-link">ثبت نام <i class="fa fa-user"></i></router-link>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
