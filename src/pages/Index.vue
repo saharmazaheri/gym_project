@@ -6,14 +6,14 @@
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-md-6">
                         <div class="hero-text">
-                            <h1>Lorem ipsum dolor sit amet</h1>
+                            <h1 class="navbar-brand">H<span>ero</span> fit</h1>
                             <p>
                                 Lorem ipsum dolor sit amet elit. Phasell nec pretum mi. Curabi ornare velit non. Aliqua
                                 metus tortor auctor quis sem.
                             </p>
                             <div class="hero-btn">
-                                <a class="btn" href="login.html">ورود</a>
-                                <a class="btn" href="signup.html">ثبت نام</a>
+                                <a class="btn" href="">ورود</a>
+                                <a class="btn" href="">ثبت نام</a>
                             </div>
                         </div>
                     </div>
