@@ -4,6 +4,7 @@ import UserOpinion from './pages/Opinions.vue'
 import Courses from './pages/Courses.vue'
 import Trainers from './pages/Trainers.vue'
 import CoffeeShop from './pages/CoffeeShop.vue'
+import TrainerPage from './pages/TrainerPage.vue'
 
 export const Routes = [
     {
@@ -29,5 +30,10 @@ export const Routes = [
     {
         path: '/coffee-shop',
         component: CoffeeShop
+    },
+    {
+        path: '/trainers/trainer-page/:id',
+        component: TrainerPage,
+        name:'trainerpage'
     }
 ];
