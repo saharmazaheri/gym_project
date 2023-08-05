@@ -2071,6 +2071,7 @@ a:focus {
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
+    gap: 15px;
 }
 
 .resume-input {
