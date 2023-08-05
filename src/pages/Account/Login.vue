@@ -80,27 +80,9 @@
 
 <script>
 import { required, maxLength, email, minLength } from 'vuelidate/lib/validators'
+import { Mixin } from '../../Mixins/Mixin.js'
 export default {
-    data() {
-        return {
-            Email: "",
-            Password: ""
-        };
-    },
-    methods: {
-        LoginUser() {
-            this.$router.replace("/");
-        }
-    },
-    validations: {
-        Email: {
-            required,
-            email,
-        },
-        Password: {
-            required
-        }
-    }
+    mixins: [Mixin]
 };
 </script>
 
@@ -108,4 +90,5 @@ export default {
 .invalid {
     box-shadow: 0 0 5px red;
     background-color: lightpink;
-}</style>
+}
+</style>

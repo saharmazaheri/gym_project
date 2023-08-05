@@ -30,77 +30,105 @@
                                 <form class="resume-form">
 
                                     <div class="control-group">
-                                        <input class="resume-input" type="text" placeholder="نام"
-                                          v-model="Name" @blur="$v.Name.$touch()" :class="{invalid:$v.Name.$error}"/>
-                                          <p class="help-block text-danger" v-if="!$v.Name.required && $v.Name.$dirty">لطفا نام‌ خود را وارد کنید</p>
+                                        <input class="resume-input" type="text" placeholder="نام" v-model="Name"
+                                            @blur="$v.Name.$touch()" :class="{ invalid: $v.Name.$error }" />
+                                        <p class="help-block text-danger" v-if="!$v.Name.required && $v.Name.$dirty">لطفا
+                                            نام‌ خود را وارد کنید</p>
                                     </div>
 
                                     <div class="control-group">
-                                        <input class="resume-input" type="text" placeholder="نام‌ خانوادگی"
-                                          v-model="Family" @blur="$v.Family.$touch()" :class="{invalid:$v.Family.$error}"/>
-                                        <p class="help-block text-danger" v-if="!$v.Family.required && $v.Family.$dirty">لطفا نام خانوادگی خود را وارد کنید</p>
+                                        <input class="resume-input" type="text" placeholder="نام‌ خانوادگی" v-model="Family"
+                                            @blur="$v.Family.$touch()" :class="{ invalid: $v.Family.$error }" />
+                                        <p class="help-block text-danger" v-if="!$v.Family.required && $v.Family.$dirty">
+                                            لطفا نام خانوادگی خود را وارد کنید</p>
                                     </div>
 
                                     <div class="control-group">
-                                        <input class="resume-input" type="text" placeholder="کد ملی"
-                                            v-model="NationalCode" @blur="$v.NationalCode.$touch()" :class="{invalid:$v.NationalCode.$error}"/>
-                                            <p class="help-block text-danger" v-if="!$v.NationalCode.required && $v.NationalCode.$dirty">لطفا کد ملی خود را وارد کنید</p>
-                                            <p class="help-block text-danger" v-if="!$v.NationalCode.minLength">کد ملی باید حداقل شامل{{ $v.NationalCode.$params.minLength.min }} کاراکتر باشد</p>
+                                        <input class="resume-input" type="text" placeholder="کد ملی" v-model="NationalCode"
+                                            @blur="$v.NationalCode.$touch()" :class="{ invalid: $v.NationalCode.$error }" />
+                                        <p class="help-block text-danger"
+                                            v-if="!$v.NationalCode.required && $v.NationalCode.$dirty">لطفا کد ملی خود را
+                                            وارد کنید</p>
+                                        <p class="help-block text-danger" v-if="!$v.NationalCode.minLength">کد ملی باید
+                                            حداقل شامل{{ $v.NationalCode.$params.minLength.min }} کاراکتر باشد</p>
                                     </div>
 
                                     <div class="control-group">
                                         <input class="resume-input" type="text" placeholder="تاریخ تولد"
-                                            v-model="Dateofbirth" @blur="$v.Dateofbirth.$touch()" :class="{invalid:$v.Dateofbirth.$error}"/>
-                                            <p class="help-block text-danger" v-if="!$v.Dateofbirth.required && $v.Dateofbirth.$dirty">لطفا تاریخ تولد خود را وارد کنید</p>
+                                            v-model="Dateofbirth" @blur="$v.Dateofbirth.$touch()"
+                                            :class="{ invalid: $v.Dateofbirth.$error }" />
+                                        <p class="help-block text-danger"
+                                            v-if="!$v.Dateofbirth.required && $v.Dateofbirth.$dirty">لطفا تاریخ تولد خود را
+                                            وارد کنید</p>
                                     </div>
 
                                     <div class="control-group">
                                         <input class="resume-input" type="text" placeholder="آدرس محل زندگی"
-                                            v-model="UserAddress" @blur="$v.UserAddress.$touch()" :class="{invalid:$v.UserAddress.$error}"/>
-                                            <p class="help-block text-danger" v-if="!$v.UserAddress.required && $v.UserAddress.$dirty">لطفا آدرس محل زندگی خود را وارد کنید</p>
+                                            v-model="UserAddress" @blur="$v.UserAddress.$touch()"
+                                            :class="{ invalid: $v.UserAddress.$error }" />
+                                        <p class="help-block text-danger"
+                                            v-if="!$v.UserAddress.required && $v.UserAddress.$dirty">لطفا آدرس محل زندگی خود
+                                            را وارد کنید</p>
                                     </div>
 
                                     <div class="control-group">
                                         <input class="resume-input" type="text" placeholder="شماره موبایل"
                                             data-validation-required-message="لطفا شماره موبایل  خود را وارد کنید"
-                                            v-model="PhoneNumber" @blur="$v.PhoneNumber.$touch()" :class="{invalid:$v.PhoneNumber.$error}"/>
-                                            <p class="help-block text-danger" v-if="!$v.PhoneNumber.required && $v.PhoneNumber.$dirty">لطفا شماره موبایل  خود را وارد کنید</p>
-                                            <p class="help-block text-danger" v-if="!$v.PhoneNumber.minLength">شماره موبایل باید حداقل شامل{{ $v.PhoneNumber.$params.minLength.min }} کاراکتر باشد</p>
-                                            <p class="help-block text-danger" v-if="!$v.PhoneNumber.maxLength">شماره موبایل نمی‌تواند بیشتر از{{ $v.PhoneNumber.$params.maxLength.max }} کاراکتر داشته باشد</p>
+                                            v-model="PhoneNumber" @blur="$v.PhoneNumber.$touch()"
+                                            :class="{ invalid: $v.PhoneNumber.$error }" />
+                                        <p class="help-block text-danger"
+                                            v-if="!$v.PhoneNumber.required && $v.PhoneNumber.$dirty">لطفا شماره موبایل خود
+                                            را وارد کنید</p>
+                                        <p class="help-block text-danger" v-if="!$v.PhoneNumber.minLength">شماره موبایل باید
+                                            حداقل شامل{{ $v.PhoneNumber.$params.minLength.min }} کاراکتر باشد</p>
+                                        <p class="help-block text-danger" v-if="!$v.PhoneNumber.maxLength">شماره موبایل
+                                            نمی‌تواند بیشتر از{{ $v.PhoneNumber.$params.maxLength.max }} کاراکتر داشته باشد
+                                        </p>
                                     </div>
 
                                     <div class="control-group">
-                                        <input class="resume-input" type="text" placeholder="آدرس ایمیل"
-                                            v-model="Email" @blur="$v.Email.$touch()" :class="{invalid:$v.Email.$error}"/>   
-                                        <p class="help-block text-danger" v-if="!$v.Email.required && $v.Email.$dirty">لطفا ایمیل خود را وارد کنید</p>
-                                        <p class="help-block text-danger" v-if="!$v.Email.email">ایمیل وارد شده معتبر نمی‌باشد</p>
-                                        <p class="help-block text-danger" v-if="!$v.Email.maxLength">ایمیل کاربر نمی‌تواند بیشتر از{{ $v.Email.$params.maxLength.max }} کاراکتر داشته باشد</p>
+                                        <input class="resume-input" type="text" placeholder="آدرس ایمیل" v-model="Email"
+                                            @blur="$v.Email.$touch()" :class="{ invalid: $v.Email.$error }" />
+                                        <p class="help-block text-danger" v-if="!$v.Email.required && $v.Email.$dirty">لطفا
+                                            ایمیل خود را وارد کنید</p>
+                                        <p class="help-block text-danger" v-if="!$v.Email.email">ایمیل وارد شده معتبر
+                                            نمی‌باشد</p>
+                                        <p class="help-block text-danger" v-if="!$v.Email.maxLength">ایمیل کاربر نمی‌تواند
+                                            بیشتر از{{ $v.Email.$params.maxLength.max }} کاراکتر داشته باشد</p>
                                     </div>
 
                                     <div class="control-group">
-                                        <input class="resume-input" type="password" placeholder="رمز عبور" 
-                                        v-model="Password" @blur="$v.Password.$touch()" :class="{invalid:$v.Password.$error}"/>
-                                        <p class="help-block text-danger" v-if="!$v.Password.required && $v.Password.$dirty">لطفا رمز عبور خود را وارد کنید</p>
-                                        <p class="help-block text-danger" v-if="!$v.Password.minLength">رمز عبور باید حداقل شامل{{ $v.Password.$params.minLength.min }} کاراکتر باشد</p>
+                                        <input class="resume-input" type="password" placeholder="رمز عبور"
+                                            v-model="Password" @blur="$v.Password.$touch()"
+                                            :class="{ invalid: $v.Password.$error }" />
+                                        <p class="help-block text-danger"
+                                            v-if="!$v.Password.required && $v.Password.$dirty">لطفا رمز عبور خود را وارد
+                                            کنید</p>
+                                        <p class="help-block text-danger" v-if="!$v.Password.minLength">رمز عبور باید حداقل
+                                            شامل{{ $v.Password.$params.minLength.min }} کاراکتر باشد</p>
                                     </div>
 
                                     <div class="control-group">
                                         <input class="resume-input" type="password" placeholder="تکرار رمز عبور"
-                                           v-model="RePassword" @blur="$v.RePassword.$touch()" :class="{invalid:$v.RePassword.$error}"/>
-                                           <p class="help-block text-danger" v-if="!$v.RePassword.required && $v.RePassword.$dirty">لطفا تکرار رمز عبور خود را وارد کنید</p>
-                                        <p class="help-block text-danger" v-if="!$v.RePassword.sameAs && $v.RePassword.$dirty">رمز عبور مغایرت دارد</p>
-                                        
+                                            v-model="RePassword" @blur="$v.RePassword.$touch()"
+                                            :class="{ invalid: $v.RePassword.$error }" />
+                                        <p class="help-block text-danger"
+                                            v-if="!$v.RePassword.required && $v.RePassword.$dirty">لطفا تکرار رمز عبور خود
+                                            را وارد کنید</p>
+                                        <p class="help-block text-danger"
+                                            v-if="!$v.RePassword.sameAs && $v.RePassword.$dirty">رمز عبور مغایرت دارد</p>
+
                                     </div>
 
                                     <div class="text-center">
                                         <br>
-                                        <button class="btn signup-width" type="submit" @click.prevent="RegisterUser()" :disabled="$v.$invalid">ثبت نام</button>
+                                        <button class="btn signup-width" type="submit" @click.prevent="RegisterUser()"
+                                            :disabled="$v.$invalid">ثبت نام</button>
                                     </div>
-                                </form>
-                                <br>
-                                <div class="icon">
-                                    <p>از قبل حساب کاربری دارید؟ <a href="login.html"><i class="fa fa-lock"></i>ورود</a></p>
-                                </div>
+                            </form>
+                            <br>
+                            <div class="icon">
+                                <p>از قبل حساب کاربری دارید؟ <a href="login.html"><i class="fa fa-lock"></i>ورود</a></p>
                             </div>
                         </div>
                     </div>
@@ -108,82 +136,17 @@
             </div>
         </div>
     </div>
-</template>
+</div></template>
 
 <script>
-import { required, maxLength, email,minLength,sameAs } from 'vuelidate/lib/validators'
+import { required, maxLength, email, minLength, sameAs } from 'vuelidate/lib/validators'
+import { Mixin } from '../../Mixins/Mixin.js'
 export default {
-    data() {
-        return {
-            Name: "",
-            Family:"",
-            NationalCode: "",
-            Dateofbirth: "",
-            UserAddress: "",
-            PhoneNumber: "",
-            Email: "",
-            Password: "",
-            RePassword: ""
-        };
-    },
-    methods: {
-        RegisterUser() {
-            const register = {
-                Name: this.Name,
-                Family: this.Family,
-                NationalCode: this.NationalCode,
-                Dateofbirth: this.Dateofbirth,
-                UserAddress: this.UserAddress,
-                PhoneNumber: this.PhoneNumber,
-                Email: this.Email,
-                Password: this.Password,
-                RePassword: this.RePassword
-            };
-            this.$router.dispatch("RegisterUser", register);
-        }
-    },
-    validations:{
-        Name:{
-            required
-        },
-        Family:{
-            required
-        },
-        NationalCode:{
-            required,
-            minLength:minLength(10)
-        },
-        Dateofbirth:{
-            required
-        },
-        UserAddress:{
-            required
-        },
-        PhoneNumber:{
-            minLength:minLength(8),
-            maxLength:maxLength(11),
-            required
-        },
-        Email:{
-            required,
-            email,
-            maxLength:maxLength(100)
-        },
-        Password:{
-            minLength:minLength(6),
-            required
-        },
-        RePassword:{
-            sameAs:sameAs('Password')
-        }
-
-    }
+    mixins: [Mixin]
 };
 </script>
 
-<style>
-.invalid{
+<style>.invalid {
     box-shadow: 0 0 5px red;
     background-color: lightpink;
-}
-</style>
+}</style>
