@@ -32,7 +32,7 @@
                                     <div class="control-group">
                                         <input class="resume-input" type="text" placeholder="نام"
                                           v-model="Name" @blur="$v.Name.$touch()" :class="{invalid:$v.Name.$error}"/>
-                                        <p class="help-block text-danger" v-if="!$v.Name.required && $v.Name.$dirty">لطفا نام‌ خود را وارد کنید</p>
+                                          <p class="help-block text-danger" v-if="!$v.Name.required && $v.Name.$dirty">لطفا نام‌ خود را وارد کنید</p>
                                     </div>
 
                                     <div class="control-group">
@@ -57,7 +57,7 @@
                                     <div class="control-group">
                                         <input class="resume-input" type="text" placeholder="آدرس محل زندگی"
                                             v-model="UserAddress" @blur="$v.UserAddress.$touch()" :class="{invalid:$v.UserAddress.$error}"/>
-                                            <p class="help-block text-danger" v-if="!$v.UserAddress.required && $v.UserAddress.$dirty">"لطفا آدرس محل زندگی خود را وارد کنید</p>
+                                            <p class="help-block text-danger" v-if="!$v.UserAddress.required && $v.UserAddress.$dirty">لطفا آدرس محل زندگی خود را وارد کنید</p>
                                     </div>
 
                                     <div class="control-group">
