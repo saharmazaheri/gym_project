@@ -32,9 +32,20 @@
                             <h3>{{ item.title }}</h3>
                             <p>{{ item.comments }}</p>
                             <p>{{ item.price }}</p>
+                            <p>{{ item.id }}</p>
+                            <br /><br />
+                            <span>
+                                <label>تعداد :</label>
+                                <input type="text" class="search_box" v-model="count" />
+                                <button type="button" class="btn btn-fefault cart">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    افـزودن به سبـد خریـد
+                                </button>
+                            </span>
+                            <a class="btn btn-default check_out cursor-pointer" @click="AddProduct(item.id)">ثبت
+                                سفارش</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -45,10 +56,56 @@
 
 <script>
 export default {
+    data() {
+        return {
+
+            count: 1
+        }
+    },
     computed: {
         coffee() {
             return this.$store.getters.GetCoffee;
+        },
+        shopcart() {
+            return this.$store.getters.Getshopcart;
+        },
+        Total() {
+            return this.$store.getters.GetTotal;
         }
+    },
+    methods: {
+        AddProduct(Lid) {
+
+            const zarb = this.coffee[Lid].price * this.count
+            let TotalPrice=0
+            this.shopcart.push([this.coffee[Lid].imge,
+            this.coffee[Lid].title,
+            this.coffee[Lid].price,
+            this.count, zarb,TotalPrice]);
+            TotalPrice = zarb + zarb
+            
+            
+
+            alert('محصول با موفقیت به سبد خرید اضافه شد');
+        },
     }
 };
 </script>
+
+<style>
+.search_box input {
+    text-align: right;
+    background: #F0F0E9;
+    border: medium none;
+    color: #B2B2B2;
+    font-family: 'BYekan';
+    font-size: 12px;
+    font-weight: 300;
+    height: 35px;
+    outline: medium none;
+    padding-right: 10px;
+    width: 155px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+</style>
