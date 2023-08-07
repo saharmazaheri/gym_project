@@ -51,6 +51,7 @@
                         <router-link to="/trainers" active-class="active" class="nav-item nav-link">مربی‌ها</router-link>
                         <router-link to="/resume" active-class="active" class="nav-item nav-link">رزومه</router-link>
                         <router-link to="/coffee-shop" active-class="active" class="nav-item nav-link">کافی شاپ</router-link>
+                        <router-link to="/CoffeeUserShopCart" active-class="active" class="nav-item nav-link">سبد خرید</router-link>
                         <a href="" class="nav-item nav-link">Pose</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
