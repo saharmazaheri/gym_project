@@ -8,6 +8,7 @@ import Trainers from './pages/Trainers.vue'
 import CoffeeShop from './pages/CoffeeShop.vue'
 import TrainerPage from './pages/TrainerPage.vue'
 import Resume from './pages/Resume.vue'
+import CoffeeUserShopCart from './pages/CoffeeUserShopCart.vue'
 
 export const Routes = [
     {
@@ -48,7 +49,11 @@ export const Routes = [
         name: 'trainerpage'
     },
     {
-        path:'/resume',
-        component:Resume
+        path: '/resume',
+        component: Resume
+    },
+    {
+        path: '/CoffeeUserShopCart',
+        component: CoffeeUserShopCart
     }
 ];
